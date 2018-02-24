@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/Stopwatch.js"></script>
+    <script src="../js/scores.js"></script>
+    <link rel="icon" href="../res/unsafe.png">
+</head>
+<body>
+Team Number: <input type="text"><br><br>
+<!--<input class="stopwatch" id="stopwatch" type="text" value="0:0:0"><br>-->
+<!--<input class="button" id="startandstopbutton" type="button" value="Start/Stop" onClick="startandstop();"><br>-->
+<!--<input class="button" type="button" value="Reset" onclick="resetstopwatch()"><br>-->
+<!--<input type="button">-->
+<!--<textarea class="lap" id="lapdetails"></textarea><br>-->
+<!--<input class="typeButton" type="button" value="SEND" onclick="resetstopwatch()">-->
+<!--<input class="typeButton" type="button" value="SEND" onclick="resetstopwatch()">-->
+<!--<input class="typeButton" type="button" value="SEND" onclick="resetstopwatch()">-->
+<p style="font-size: 120%">Intake:
+    <select>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+</p>
+<div class="info">
+    <p>0- ineffective, didn't use because it didn't work, or robot didn't have one</p>
+    <p>1- Took too long to pick up cube</p>
+    <p>2- Works most of the time</p>
+    <p>3- best intake, quick, smooth, works all the time</p>
+</div>
+<br>
+
+<textarea class="scores" id="scores">
+Switch near: 0
+Switch far: 0
+Scale: 0
+Vault: 0
+</textarea><br>
+<input class="scoreButton" type="button" onclick="switchNear()" value="Near Switch">
+<input class="scoreButton" type="button" onclick="switchFar()" value="Far Switch">
+<input class="scoreButton" type="button" onclick="scale()" value="Scale">
+<input class="scoreButton" type="button" onclick="vault()" value="Vault">
+
+</body>
+</html>
